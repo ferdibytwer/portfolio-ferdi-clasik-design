@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Configuration Tailwind */
+@theme {
+  --color-primary: #f2c94c;
+  --color-secondary: #4b371c;
+  --font-heading: "Playfair Display", serif;
+  --font-sans:
+    "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Customize Compenent */
+@layer components {
+  .card-project {
+    @apply text-black;
+  }
+  .nav-link {
+    @apply text-gray-400 hover:text-white transition;
+  }
+}
+/* Customize Utility */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .container_ {
+    @apply lg:w-5/6 mx-auto px-4;
+  }
+  .section-spacing {
+    @apply mb-40 mt-20 sm:mt-30;
+  }
+  /* Untuk H1 */
+  .text-heading {
+    font-family: var(--font-heading);
+    @apply text-6xl md:text-7xl lg:text-8xl font-bold font-heading text-black;
+  }
+  /* Untuk H2 */
+  .text-subheading {
+    @apply text-2xl font-bold text-black;
+  }
+  /* Untuk H3 Footer */
+  .text-subheading-2 {
+    @apply text-lg font-semibold;
+  }
+  .image-style {
+    @apply aspect-3/2 object-cover filter grayscale sepia contrast-90 brightness-95 border border-gray-300 shadow-sm transition-all duration-300 ease-in-out group-hover:filter-none;
+  }
+}
+
+/* Customize Default */
+@layer base {
+  body {
+    @apply text-sm md:text-lg bg-primary text-secondary;
+  }
+}
