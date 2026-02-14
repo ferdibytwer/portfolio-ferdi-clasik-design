@@ -15,7 +15,7 @@ export default function Button({
         disabled ? "pointer-events-none opacity-50" : ""
       }`}
     >
-      <span className="relative z-10 text-black group-hover:text-white transition-colors duration-300">
+      <span className="relative z-9999 text-black group-hover:text-white transition-colors duration-300">
         {children}
       </span>
 
