@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function Footer({ Link }) {
   return (
     <>
       <footer className="bg-gray-900 text-white pt-12 pb-8">
@@ -69,29 +69,29 @@ export default function Footer() {
               <h3 className="text-subheading-2">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="/" className="nav-link">
+                  <Link href="/" className="nav-link">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/about" className="nav-link">
+                  <Link href="/about" className="nav-link">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/projects" className="nav-link">
+                  <Link href="/projects" className="nav-link">
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/services" className="nav-link">
+                  <Link href="/services" className="nav-link">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact" className="nav-link">
+                  <Link href="/contact" className="nav-link">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

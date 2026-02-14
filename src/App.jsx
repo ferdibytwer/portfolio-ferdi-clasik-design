@@ -6,6 +6,7 @@ import { Link, Route } from "wouter";
 import Button from "./compenents/Button";
 import Header from "./compenents/Header";
 import Footer from "./compenents/Footer";
+import ScrollToTop from "./compenents/ScrollToTop";
 // Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -22,6 +23,7 @@ import { sertifs } from "./data/sertifs.js";
 function App() {
   return (
     <>
+      <ScrollToTop />
       {/* Header */}
       <Header Link={Link} />
 
@@ -50,7 +52,7 @@ function App() {
       </Route>
 
       {/* Footer */}
-      <Footer />
+      <Footer Link={Link} />
     </>
   );
 }
