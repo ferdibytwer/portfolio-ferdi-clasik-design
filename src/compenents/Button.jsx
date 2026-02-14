@@ -11,11 +11,11 @@ export default function Button({
     <Link
       href={href}
       aria-label={ariaLabel}
-      className={`relative overflow-hidden px-4 py-2 border bg-transparent group flex items-center justify-center ${className} ${
+      className={`relative z-999 overflow-hidden px-4 py-2 border bg-transparent group flex items-center justify-center ${className} ${
         disabled ? "pointer-events-none opacity-50" : ""
       }`}
     >
-      <span className="relative z-9999 text-black group-hover:text-white transition-colors duration-300">
+      <span className="relative z-1 text-black group-hover:text-white transition-colors duration-300">
         {children}
       </span>
 
