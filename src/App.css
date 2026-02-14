@@ -37,7 +37,7 @@
   /* Untuk H1 */
   .text-heading {
     font-family: var(--font-heading);
-    @apply text-6xl md:text-7xl lg:text-8xl font-bold font-heading text-black;
+    @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold font-heading text-black;
   }
   /* Untuk H2 */
   .text-subheading {
