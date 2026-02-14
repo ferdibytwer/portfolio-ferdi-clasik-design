@@ -19,7 +19,7 @@ export default function Button({
         {children}
       </span>
 
-      <span className="absolute left-0 bottom-0 w-full h-full bg-black transform scale-0 origin-bottom-left group-hover:scale-100 transition-transform duration-300 z-0"></span>
+      <span className="absolute inset-0 bg-black transform scale-0 origin-bottom-left group-hover:scale-100 transition-transform duration-300 z-0 pointer-events-none"></span>
     </Link>
   );
 }
