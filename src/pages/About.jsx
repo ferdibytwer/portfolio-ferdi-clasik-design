@@ -184,7 +184,14 @@ export default function About({ dataPersonal, dataSertifs, dataPosts }) {
                   </div>
                 </div>
                 <div className="flex items-center gap-x-4 text-xs mb-2">
-                  <time>Diunggah pada {post.uploadDate}</time>
+                  <time>
+                    Diunggah pada{" "}
+                    {new Date(post.uploadDate).toLocaleDateString("id-ID", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
                   {/* Kategori */}
                   <div className="rounded-full bg-gray-50 px-3 py-1.5 font-medium hover:bg-gray-100">
                     {post.category.name}

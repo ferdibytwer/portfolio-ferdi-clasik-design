@@ -96,7 +96,7 @@ export default function Projects({ projects }) {
                         <div className="flex items-center gap-x-4 text-xs mb-2">
                           <time>
                             Diunggah pada{" "}
-                            {new Date(project.created_at).toLocaleDateString(
+                            {new Date(project.uploadDate).toLocaleDateString(
                               "id-ID",
                               {
                                 year: "numeric",

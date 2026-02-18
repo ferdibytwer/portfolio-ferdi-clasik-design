@@ -153,7 +153,17 @@ export default function Home({ dataPersonal, dataProjects, dataTestimonials }) {
                           </div>
                         </div>
                         <div className="flex items-center gap-x-4 text-xs mb-2">
-                          <time>Diunggah pada {project.uploadDate}</time>
+                          <time>
+                            Diunggah pada{" "}
+                            {new Date(project.uploadDate).toLocaleDateString(
+                              "id-ID",
+                              {
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric",
+                              },
+                            )}
+                          </time>
                           <a
                             href={`/projects?category=${project.category.slug}`}
                             className="rounded-full bg-gray-50 px-3 whitespace-nowrap py-1.5 font-medium hover:bg-gray-100"
