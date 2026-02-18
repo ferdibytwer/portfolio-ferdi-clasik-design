@@ -145,10 +145,7 @@ export default function Home({ dataPersonal, dataProjects, dataTestimonials }) {
                               href={project.link || `/projects/${project.slug}`}
                             >
                               <img
-                                src={
-                                  project.image ||
-                                  "src/assets/img/bg-sementara.avif"
-                                }
+                                src={project.image || bgSementara}
                                 alt={project.title}
                                 className="image-style"
                               />
