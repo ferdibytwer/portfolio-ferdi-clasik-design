@@ -1,6 +1,7 @@
 import { Link, useSearch } from "wouter";
 // import component
 import ButtonCompenent from "../compenents/Button";
+import bgSementara from "../assets/img/bg-sementara.avif";
 
 export default function Projects({ projects }) {
   const search = useSearch();
@@ -84,22 +85,11 @@ export default function Projects({ projects }) {
                             <a
                               href={project.link || `/projects/${project.slug}`}
                             >
-                              {project.image ? (
-                                <img
-                                  src={`/storage/${project.image}`}
-                                  alt={project.title}
-                                  className="image-style"
-                                />
-                              ) : (
-                                <img
-                                  src={
-                                    project.image ||
-                                    "src/assets/img/bg-sementara.avif"
-                                  }
-                                  alt={project.title}
-                                  className="image-style"
-                                />
-                              )}
+                              <img
+                                src={project.image || bgSementara}
+                                alt={project.title}
+                                className="image-style"
+                              />
                             </a>
                           </div>
                         </div>
@@ -169,10 +159,7 @@ export default function Projects({ projects }) {
                           {/* Image */}
                           <a href={project.link || `/projects/${project.slug}`}>
                             <img
-                              src={
-                                project.image ||
-                                "src/assets/img/bg-sementara.avif"
-                              }
+                              src={project.image || bgSementara}
                               alt={project.title}
                               className="image-style"
                             />
@@ -240,10 +227,7 @@ export default function Projects({ projects }) {
                           {/* Image */}
                           <a href={project.link || `/projects/${project.slug}`}>
                             <img
-                              src={
-                                project.image ||
-                                "src/assets/img/bg-sementara.avif"
-                              }
+                              src={project.image || bgSementara}
                               alt={project.title}
                               className="image-style"
                             />

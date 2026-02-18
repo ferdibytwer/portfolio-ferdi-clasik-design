@@ -1,6 +1,7 @@
 import profil from "../assets/img/profil.jpg";
 // import component
 import ButtonCompenent from "../compenents/Button";
+import bgSementara from "../assets/img/bg-sementara.avif";
 
 export default function About({ dataPersonal, dataSertifs, dataPosts }) {
   return (
@@ -123,9 +124,7 @@ export default function About({ dataPersonal, dataSertifs, dataPosts }) {
                       {/* image */}
                       <a href={sertif.link || "#"}>
                         <img
-                          src={
-                            sertif.image || "src/assets/img/bg-sementara.avif"
-                          }
+                          src={sertif.image || bgSementara}
                           className="image-style"
                           alt={sertif.title}
                         />
@@ -177,10 +176,7 @@ export default function About({ dataPersonal, dataSertifs, dataPosts }) {
                     {/* Image */}
                     <a href={post.link || "#"}>
                       <img
-                        src={
-                          post.image ||
-                          "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w"
-                        }
+                        src={post.image || bgSementara}
                         alt={post.title}
                         className="image-style"
                       />

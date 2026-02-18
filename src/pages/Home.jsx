@@ -4,6 +4,7 @@ import profil from "../assets/img/profil.jpg";
 import temanUniv from "../assets/img/teman-univ.jpeg";
 import temanUniv2 from "../assets/img/teman-persiapan-demo.jpeg";
 import temanUniv3 from "../assets/img/teman-demo.jpeg";
+import bgSementara from "../assets/img/bg-sementara.avif";
 // import component
 import ButtonCompenent from "../compenents/Button";
 
