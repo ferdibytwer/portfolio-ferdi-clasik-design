@@ -5,6 +5,6 @@ export const personal = {
   pekerjaan: [
     "Fullstack Web Developer",
     "Tentor Private Matematika dan Pemrograman",
-    "Bisnis",
+    "Entrepreneur",
   ],
 };

@@ -28,8 +28,8 @@ export default function Home({
             <div className="section-spacing">
               <h1 className="text-heading mb-4">PORTFOLIO</h1>
               <p className="mb-6">
-                Halo, saya Ferdi seorang mahasiswa matematika dengan peminatan
-                pemrograman, seni, dan sastra.
+                Halo! saya Ferdi seorang mahasiswa matematika yang senang
+                terhadap pemrograman, seni, dan sastra.
               </p>
               <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {/* Foto Atas (Selalu tampil) */}
