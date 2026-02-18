@@ -208,7 +208,7 @@ export default function Projects({ projects }) {
       ) : (
         <>
           {/* Project Filtering */}
-          <section id="filteredProjects" className="w-full mb-40 mt-30">
+          <section id="filteredProjects" className="w-full mb-40 mt-20">
             {/* Judul */}
             <div className="lg:w-5/6 mx-auto px-4">
               <h1 className="text-subheading mb-4 sm:mb-6 lg:mb-8">
