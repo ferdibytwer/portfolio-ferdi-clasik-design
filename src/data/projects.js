@@ -1,8 +1,8 @@
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Website",
-    slug: "ecommerce-website",
+    title: "Pria Solo Game",
+    slug: "pria-solo-game",
     description:
       "Pria solo adalah game gamifikasi kebudayaan solo. Game ini dirancang untuk anak-anak sebagai langkah pengenalan dan pelestarian budaya solo.",
     image: null,
