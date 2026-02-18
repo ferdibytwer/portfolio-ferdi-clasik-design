@@ -1,4 +1,5 @@
-export default function Footer({ Link }) {
+import { Link } from "wouter";
+export default function Footer() {
   return (
     <>
       <footer className="bg-gray-900 text-white pt-12 pb-8">

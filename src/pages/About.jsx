@@ -1,11 +1,8 @@
 import profil from "../assets/img/profil.jpg";
+// import component
+import ButtonCompenent from "./compenents/Button";
 
-export default function About({
-  dataPersonal,
-  dataSertifs,
-  dataPosts,
-  ButtonCompenent,
-}) {
+export default function About({ dataPersonal, dataSertifs, dataPosts }) {
   return (
     <>
       {/* About */}
@@ -127,8 +124,7 @@ export default function About({
                       <a href={sertif.link || "#"}>
                         <img
                           src={
-                            sertif.image ||
-                            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800"
+                            sertif.image || "src/assets/img/bg-sementara.avif"
                           }
                           className="image-style"
                           alt={sertif.title}

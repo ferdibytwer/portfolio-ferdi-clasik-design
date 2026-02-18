@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
+// impor img
 import profil from "../assets/img/profil.jpg";
 import temanUniv from "../assets/img/teman-univ.jpeg";
 import temanUniv2 from "../assets/img/teman-persiapan-demo.jpeg";
 import temanUniv3 from "../assets/img/teman-demo.jpeg";
+// import component
+import ButtonCompenent from "./compenents/Button";
 
-export default function Home({
-  ButtonCompenent,
-  dataPersonal,
-  dataProjects,
-  dataTestimonials,
-}) {
+export default function Home({ dataPersonal, dataProjects, dataTestimonials }) {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   useEffect(() => {
@@ -148,7 +146,7 @@ export default function Home({
                               <img
                                 src={
                                   project.image ||
-                                  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800"
+                                  "src/assets/img/bg-sementara.avif"
                                 }
                                 alt={project.title}
                                 className="image-style"

@@ -3,7 +3,6 @@ import "./App.css";
 // Import lib untuk route
 import { Link, Route } from "wouter";
 // Import compenents
-import Button from "./compenents/Button";
 import Header from "./compenents/Header";
 import Footer from "./compenents/Footer";
 import ScrollToTop from "./compenents/ScrollToTop";
@@ -25,12 +24,11 @@ function App() {
     <>
       <ScrollToTop />
       {/* Header */}
-      <Header Link={Link} />
+      <Header />
 
       {/* Main */}
       <Route path="/">
         <Home
-          ButtonCompenent={Button}
           dataPersonal={personal}
           dataProjects={projects}
           dataTestimonials={testimonials}
@@ -41,14 +39,13 @@ function App() {
           dataSertifs={sertifs}
           dataPersonal={personal}
           dataPosts={posts}
-          ButtonCompenent={Button}
         />
       </Route>
       <Route path="/projects">
-        <Projects projects={projects} ButtonCompenent={Button} />
+        <Projects projects={projects} />
       </Route>
       <Route path="/contact">
-        <Contact ButtonCompenent={Button} />
+        <Contact />
       </Route>
 
       {/* Footer */}

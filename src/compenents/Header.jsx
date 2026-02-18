@@ -1,6 +1,8 @@
 import { useState } from "react";
+// Import link untuk route
+import { Link } from "wouter";
 
-function Header({ Link }) {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
