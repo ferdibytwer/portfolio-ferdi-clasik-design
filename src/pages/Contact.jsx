@@ -1,6 +1,8 @@
 import { useState } from "react";
+// import component
+import ButtonCompenent from "../compenents/Button";
 
-export default function Contact({ ButtonCompenent }) {
+export default function Contact() {
   const [successMessage, setSuccessMessage] = useState("");
   const [formData, setFormData] = useState({
     name: "",

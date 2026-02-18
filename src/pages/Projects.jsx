@@ -1,6 +1,6 @@
 import { Link, useSearch } from "wouter";
 // import component
-import ButtonCompenent from "./compenents/Button";
+import ButtonCompenent from "../compenents/Button";
 
 export default function Projects({ projects }) {
   const search = useSearch();

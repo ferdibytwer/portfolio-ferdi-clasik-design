@@ -1,6 +1,6 @@
 import profil from "../assets/img/profil.jpg";
 // import component
-import ButtonCompenent from "./compenents/Button";
+import ButtonCompenent from "../compenents/Button";
 
 export default function About({ dataPersonal, dataSertifs, dataPosts }) {
   return (

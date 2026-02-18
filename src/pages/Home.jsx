@@ -5,7 +5,7 @@ import temanUniv from "../assets/img/teman-univ.jpeg";
 import temanUniv2 from "../assets/img/teman-persiapan-demo.jpeg";
 import temanUniv3 from "../assets/img/teman-demo.jpeg";
 // import component
-import ButtonCompenent from "./compenents/Button";
+import ButtonCompenent from "../compenents/Button";
 
 export default function Home({ dataPersonal, dataProjects, dataTestimonials }) {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
